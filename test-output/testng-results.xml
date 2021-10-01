@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-01T22:45:53 IST" name="Suite" finished-at="2021-10-01T22:49:11 IST" duration-ms="198148">
+    <groups>
+    </groups>
+    <test started-at="2021-10-01T22:45:53 IST" name="Test" finished-at="2021-10-01T22:49:11 IST" duration-ms="198148">
+      <class name="scripts.Videoplayscenario">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.Videoplayscenario@34f5090e]" started-at="2021-10-01T22:45:53 IST" name="openApp" finished-at="2021-10-01T22:46:42 IST" duration-ms="48820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc3()[pri:0, instance:scripts.Videoplayscenario@34f5090e]" started-at="2021-10-01T22:46:42 IST" name="tc3" finished-at="2021-10-01T22:47:41 IST" duration-ms="59221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.Videoplayscenario@34f5090e]" started-at="2021-10-01T22:47:41 IST" name="closeApp" finished-at="2021-10-01T22:47:49 IST" duration-ms="8725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc3 status=SUCCESS method=Videoplayscenario.tc3()[pri:0, instance:scripts.Videoplayscenario@34f5090e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.Videoplayscenario -->
+      <class name="scripts.FaceBookLike">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.FaceBookLike@fba92d3]" started-at="2021-10-01T22:48:33 IST" name="openApp" finished-at="2021-10-01T22:48:40 IST" duration-ms="7267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc2()[pri:0, instance:scripts.FaceBookLike@fba92d3]" started-at="2021-10-01T22:48:40 IST" name="tc2" finished-at="2021-10-01T22:49:09 IST" duration-ms="28815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.FaceBookLike@fba92d3]" started-at="2021-10-01T22:49:09 IST" name="closeApp" finished-at="2021-10-01T22:49:11 IST" duration-ms="1861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=FaceBookLike.tc2()[pri:0, instance:scripts.FaceBookLike@fba92d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.FaceBookLike -->
+      <class name="scripts.AddingcourseTocart">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.AddingcourseTocart@67c33749]" started-at="2021-10-01T22:47:49 IST" name="openApp" finished-at="2021-10-01T22:47:57 IST" duration-ms="7237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc1()[pri:0, instance:scripts.AddingcourseTocart@67c33749]" started-at="2021-10-01T22:47:57 IST" name="tc1" finished-at="2021-10-01T22:48:20 IST" duration-ms="22855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.AddingcourseTocart@67c33749]" started-at="2021-10-01T22:48:20 IST" name="closeApp" finished-at="2021-10-01T22:48:33 IST" duration-ms="13257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=AddingcourseTocart.tc1()[pri:0, instance:scripts.AddingcourseTocart@67c33749] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.AddingcourseTocart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
