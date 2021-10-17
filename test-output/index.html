@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="scripts.Videoplayscenario" class="method navigator-link" hash-for-method="tc3">tc3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,11 +126,6 @@
                         <a href="#" panel-name="suite-Suite" title="scripts.FaceBookLike" class="method navigator-link" hash-for-method="tc2">tc2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="scripts.Videoplayscenario" class="method navigator-link" hash-for-method="tc3">tc3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -129,9 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">scripts.Videoplayscenario</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,10 +149,65 @@
                   <a name="tc3">
                   </a> <!-- tc3 -->
                   <span class="method-name">tc3</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NEEVETHA&apos;, ip: &apos;192.168.0.116&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0052BDE3+2473443]
+	Ordinal0 [0x004C6661+2057825]
+	Ordinal0 [0x003D2438+1057848]
+	Ordinal0 [0x003ED598+1168792]
+	Ordinal0 [0x003E9CAF+1154223]
+	Ordinal0 [0x00419ADF+1350367]
+	Ordinal0 [0x0041974A+1349450]
+	Ordinal0 [0x004155AB+1332651]
+	Ordinal0 [0x003F2104+1188100]
+	Ordinal0 [0x003F2F59+1191769]
+	GetHandleVerifier [0x006B2266+1549718]
+	GetHandleVerifier [0x0075D4A7+2250711]
+	GetHandleVerifier [0x005B718B+521403]
+	GetHandleVerifier [0x005B6229+517465]
+	Ordinal0 [0x004CB79D+2078621]
+	Ordinal0 [0x004CFB58+2095960]
+	Ordinal0 [0x004CFC92+2096274]
+	Ordinal0 [0x004D9541+2135361]
+	BaseThreadInitThunk [0x76AD8543+14]
+	RtlInitializeExceptionChain [0x7784AC69+133]
+	RtlInitializeExceptionChain [0x7784AC3C+88]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at genericlibrary.Baseclass.openApp(Baseclass.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -230,17 +294,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc3')
-data.setCell(0, 2, 'scripts.Videoplayscenario')
-data.setCell(0, 3, 59221);
+data.setCell(0, 1, 'tc1')
+data.setCell(0, 2, 'scripts.AddingcourseTocart')
+data.setCell(0, 3, 51394);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'tc2')
 data.setCell(1, 2, 'scripts.FaceBookLike')
-data.setCell(1, 3, 28815);
+data.setCell(1, 3, 46856);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc1')
-data.setCell(2, 2, 'scripts.AddingcourseTocart')
-data.setCell(2, 3, 22855);
+data.setCell(2, 1, 'tc3')
+data.setCell(2, 2, 'scripts.Videoplayscenario')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -273,46 +337,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.Videoplayscenario</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">openApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc3</span>
-                <span class="method-start">48823 ms</span>
+                <span class="method-start">56598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc3 status=SUCCESS method=Videoplayscenario.tc3()[pri:0, instance:scripts.Videoplay...)</span>
-                <span class="method-start">108053 ms</span>
+                <span class="method-name">closeApp</span>
+                <span class="method-start">56613 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.AddingcourseTocart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApp</span>
-                <span class="method-start">116784 ms</span>
+                <span class="method-start">56621 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc1</span>
-                <span class="method-start">124021 ms</span>
+                <span class="method-start">75740 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=tc1 status=SUCCESS method=AddingcourseTocart.tc1()[pri:0, instance:scripts.Addingco...)</span>
-                <span class="method-start">146879 ms</span>
+                <span class="method-start">127138 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.FaceBookLike</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApp</span>
-                <span class="method-start">160137 ms</span>
+                <span class="method-start">146121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc2</span>
-                <span class="method-start">167404 ms</span>
+                <span class="method-start">155299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=FaceBookLike.tc2()[pri:0, instance:scripts.FaceBookLike@f...)</span>
-                <span class="method-start">196222 ms</span>
+                <span class="method-start">202160 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
